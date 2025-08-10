@@ -152,11 +152,16 @@ export default function Home() {
 
         {/* Open Graph tags */}
         <meta property="og:title" content="Hi, I'm anderle!" />
-        <meta property="og:description" content="I&#39;m a student of electrical engineering graduating next year! :D\n
-            As a hobby, I love to develop tools for the games I play." />
+        <meta property="og:description" content="I&#39;m a student of electrical engineering
+            graduating next year! :D
+            As a hobby, I love to develop
+            tools for the games I play.
+
+            Message me on Discord if you like!" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://anderle.dev" />
         <meta property="og:image" content="https://anderle.dev/pfp.png" />
+        <meta name="theme-color" content="#fc3aab" />
       </Head>
         <div
             className="text-white p-6 flex flex-col"
