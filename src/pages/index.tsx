@@ -63,7 +63,7 @@ export default function Home() {
   });
 
   useEffect(() => {
-    fetch("/api/servercount")
+    fetch("/api/public/servercount")
         .then((res) => res.json())
         .then((json) =>
             setData({
@@ -84,7 +84,7 @@ export default function Home() {
   const [patronCount, setPatronCount] = useState<number>(0);
 
   useEffect(() => {
-    fetch("/api/patreon")
+    fetch("/api/public/patreon")
         .then((res) => res.json())
         .then((json) => setPatronCount(json.patronCount ?? 0))
         .catch(() => setPatronCount(0));
@@ -296,7 +296,7 @@ export default function Home() {
                                       </span>{" "}
                       servers, totalling{" "}
                       <span className="text-green-400 font-semibold">
-                                          1.46M {/* This is a placeholder for now but it should be fetched from api later. */}
+                                          1.46M {/* This is a placeholder for now but it should be fetched from public-api later. */}
                                       </span>{" "}
                       members.
                       <br/>
