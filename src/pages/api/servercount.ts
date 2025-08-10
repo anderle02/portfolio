@@ -45,7 +45,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
             termsUrl: cachedData.termsUrl,
             privacyUrl: cachedData.privacyUrl,
         });
-    } catch (err: any) {
+    } catch (err: unknown) {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-expect-error
         return res.status(500).json({ error: err.message });
     }
 }
