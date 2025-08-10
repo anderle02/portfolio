@@ -148,6 +148,15 @@ export default function Home() {
       <>
         <Head>
         <title>anderle.dev</title>
+        <meta name="description" content="A brief description of your site" />
+
+        {/* Open Graph tags */}
+        <meta property="og:title" content="Hi, I'm anderle!" />
+        <meta property="og:description" content="I&#39;m a student of electrical engineering graduating next year! :D\n
+            As a hobby, I love to develop tools for the games I play." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://anderle.dev" />
+        <meta property="og:image" content="https://anderle.dev/pfp.png" />
       </Head>
         <div
             className="text-white p-6 flex flex-col"
